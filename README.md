@@ -1,7 +1,7 @@
 # election-maps
 Maps about the 2017 B.C. Election
 
-[https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c](The methods described in Mike Bostock's "Command Line Cartography" series to build B.C. election maps
+Using the methods described in [https://medium.com/@mbostock/command-line-cartography-part-1-897aa8f8ca2c](Mike Bostock's "Command Line Cartography" series) to build B.C. election maps
 The goal is to understand how support for each party changed across the province
 
 [https://docs.google.com/spreadsheets/d/1BoXEyhiTEbutXLmRyZGp5_9xoDivzuI0TA4NBjvfWdY/edit?usp=sharing](Vote Data for Comparisons)
