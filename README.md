@@ -6,16 +6,12 @@ The goal is to understand how support for each party changed across the province
 
 [https://docs.google.com/spreadsheets/d/1BoXEyhiTEbutXLmRyZGp5_9xoDivzuI0TA4NBjvfWdY/edit?usp=sharing](Vote Data for Comparisons)
 
-shape data for making the map is at https://catalogue.data.gov.bc.ca/dataset/current-provincial-electoral-districts-of-british-columbia (edited)
+shape data for making the maps are at https://catalogue.data.gov.bc.ca/dataset/current-provincial-electoral-districts-of-british-columbia (edited)
 
 
-[3:44] 
-excel files with voting results are at http://elections.bc.ca/resources/voting-results/provincial-general-elections-results/ (edited)
+B.C. elections data are at http://elections.bc.ca/resources/voting-results/provincial-general-elections-results/ (edited)
 
 important note re: making maps from data available on B.C. open data site - they're already pre-projected, but we still need to modify the geometry from meters to pixels
-
-
-[6:31] 
-https://medium.com/@mbostock/your-data-is-already-projected-so-the-simplest-thing-to-do-is-to-use-the-existing-projection-86cb49a9a923 (edited)
+https://medium.com/@mbostock/your-data-is-already-projected-so-the-simplest-thing-to-do-is-to-use-the-existing-projection-86cb49a9a923
 
 several ridings have changed names and shifted since 2013, which needs mentioning in a caption
