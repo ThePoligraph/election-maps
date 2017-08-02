@@ -1,0 +1,22 @@
+shp2json input.shp \
+  | geoproject 'd3.geoIdentity().reflectY(true).fitSize([960, 500], d)' \
+  | geo2svg \
+  > test.svg
+
+
+ndjson-split 'd.features' \
+  < bc-albers.json \
+  > bc-albers.ndjson
+
+ndjson-map 'd.id = d.properties.ED_ID, d' \
+  < bc-albers.ndjson \
+  > bc-albers-id.ndjson
+
+ndjson-cat result.json \
+  | ndjson-split 'd.slice(1)'
+
+
+
+ndjson-map 'd[0].properties = {Liberal_Vote_Change: (parseInt(d[1].LIB13) / parseInt(d[1].Validvotes13) - parseInt(d[1].LIB) / parseInt(d[1].Validvotes)) * 100}, d[0]' \
+    < bc-albers-join.ndjson \
+    > bc-albers-density.ndjson
